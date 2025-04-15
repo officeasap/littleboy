@@ -8,7 +8,7 @@ export default function handler(req, res) {
   // Sample mock data (replace later with real data or scraped routes)
   const mockFlights = [
     {
-      flightNumber: 'GA100', // Updated flight number to fit Garuda Indonesia
+      flightNumber: 'GA100', // Updated flight number for Garuda Indonesia
       airline: 'Garuda Indonesia', // Changed to Indonesian airline
       from: 'CGK',
       to: 'JFK',
