@@ -1,14 +1,15 @@
 import fs from 'fs';
 import path from 'path';
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   const { iata } = req.query;
 
   if (!iata) {
     return res.status(400).json({ error: 'Missing IATA code' });
   }
 
-  const filePath = path.join(process.cwd(), 'data', 'airports.dat');
+  // Ensure the data file is accessible at the correct path
+  const filePath = path.join(process.cwd(), 'data', 'airports.dat'); // This assumes `data/airports.dat` is in your repo
 
   try {
     const data = fs.readFileSync(filePath, 'utf-8');
