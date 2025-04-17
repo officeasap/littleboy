@@ -87,7 +87,7 @@
       method: 'POST',
       headers: {
 
-        'Authorization': 'Bearer sk-8eaefa18962043f99cbbd1e0aeecdb92',
+        'Authorization': 'sk-8eaefa18962043f99cbbd1e0aeecdb92',
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
